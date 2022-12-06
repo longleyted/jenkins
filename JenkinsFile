@@ -1,12 +1,12 @@
 pipeline {
     agent any
-    stages {
-        stage('Pipeline Stages'){
-            steps {
-                sh "ls"
-            }
-        }
-        stage('Build stage'){
+    stages {
+        stage('Pipeline stage'){
+            steps{
+                sh "ls"
+            }
+        }
+stage('Build stage') {
             steps {
                 sh "chmod +x buildScript.sh"
               sh "./buildScript.sh"
