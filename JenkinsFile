@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Pipeline stage'){
             steps{
-                sh "ls"
                 sh "pwd"
-                sh "chmod +x jenkins/buildScript.sh"
-                sh "jenkins/buildScript.sh"
+                sh "ls"
+                sh "chmod +x buildScript.sh"
+                sh "buildScript.sh"
             }
         }
     }
