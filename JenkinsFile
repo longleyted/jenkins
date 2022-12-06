@@ -8,7 +8,7 @@ pipeline {
         }
 stage('Build stage') {
             steps {
-                sh "chmod +x jenkins/buildScript.sh"
+                sh "chmod +x buildScript.sh"
                 sh "buildScript.sh"
             }
         }
