@@ -6,8 +6,9 @@ pipeline {
                 sh "ls"
             }
         }
-    stage('second stage'){
+    stage('Build stage'){
       steps {
-      sh “pwd”
+        sh "chmod +x buildScript.sh"
+        sh "./buildScript.sh"
     }
 }
