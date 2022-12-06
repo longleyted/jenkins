@@ -1,14 +1,16 @@
 pipeline {
-    agent any
+    agent any
     stages {
         stage('Pipeline Stages'){
             steps {
                 sh "ls"
             }
         }
-    stage('Build stage'){
-      steps {
-        sh "chmod +x buildScript.sh"
-        sh "./buildScript.sh"
+        stage('Build stage'){
+            steps {
+                sh "chmod +x buildScript.sh"
+              sh "./buildScript.sh"
+            }
+        }
     }
 }
