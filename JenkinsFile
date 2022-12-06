@@ -6,6 +6,7 @@ pipeline {
                 sh "pwd"
                 sh "ls"
                 sh "cd file"
+                sh "ls"
                 sh "chmod +x buildScript.sh"
                 sh "./buildScript.sh"
             }
