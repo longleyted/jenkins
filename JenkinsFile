@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Pipeline stage') {
             steps{
-                pwd
-                ls
-                chmod +x file/buildScript.sh
-                ./file/buildScript.sh
+                sh "pwd"
+                sh "ls"
+                sh "chmod +x file/buildScript.sh"
+                sh "file/buildScript.sh"
             }
         }
     }
